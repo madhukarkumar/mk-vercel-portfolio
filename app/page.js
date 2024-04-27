@@ -1,7 +1,4 @@
-import Image from "next/image";
-import DigitalClock from "@/components/digitalclock";
 import { Strong, Text, TextLink } from '@/components/text'
-import { Button } from '@/components/button'
 import Medium  from "@/components/medium";
 import Link from "next/link";
 import Substack from "@/components/substack";
