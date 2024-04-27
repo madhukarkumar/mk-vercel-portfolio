@@ -2,11 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import '../app/globals.css';
 
-const Substack = ({ username }) => {
+const FullLengthCard = ({ username }) => {
     return (
-        <div className="max-w-full sm:w-96 h-52 bg-blue-600 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
-            <p className="text-white text-lg mb-4 font-sans">My Book on PLG</p>
-            <p className="text-white text-sm mb-2 font-sans">Substack</p>
+        <div className="min-w-full sm:w-96 h-52 bg-green-700 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
+            <p className="text-white text-lg mb-4 font-sans">Full Length Card</p>
+            <p className="text-white text-sm mb-2 font-sans">Lorem Ipsum stuff</p>
             <div className="flex items-center">
                 <Image src="/images/mastodon.svg" alt="Mastodon logo" width={20} height={20} />
                 <span className="text-white text-sm font-sans">{username}</span>
@@ -15,5 +15,5 @@ const Substack = ({ username }) => {
     );
 };
 
-export default Substack;
+export default FullLengthCard;
 
