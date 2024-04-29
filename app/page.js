@@ -12,8 +12,8 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="grid grid-cols-12 gap-2 h-96" style={{marginBottom: '0'}}>
-            <div className="col-span-4 pl-9 pt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 h-96" style={{marginBottom: '0'}}>
+            <div className="col-span-4 sm:col-span-4 pl-9 pt-10">
                 <Text>
                     <figure><img
                         src="/images/mk-casual.jpeg"
@@ -34,7 +34,7 @@ export default function Home() {
                 <br/>
             </div>
             <div className="col-span-8 pr-5 pt-5 h-96">
-                <div className="grid grid-cols-12 gap-2 ">
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 ">
                     <div className="col-span-8 min-w-full">
                         <div className="grid grid-rows-1">
                             <div >
@@ -65,9 +65,9 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-4 p-2 pt-4">
-                        <div className="card w-full bg-black shadow-2xl h-full">
-                            <figure><img src="https://photos.smugmug.com/Portfolio/i-jZBn2Xw/0/8M7RqwJs67DhCBC4X6K2c7J3JBN8QGBSdfHWbZgP/4K/_DSC2077-4K.jpg"
+                    <div className="col-span-4 p-2 pt-4 hidden sm:block">
+                        <div className="card w-full bg-black shadow-lg h-full">
+                            <figure><img src="https://photos.smugmug.com/Portfolio/i-jZBn2Xw/0/8M7RqwJs67DhCBC4X6K2c7J3JBN8QGBSdfHWbZgP/4K/_DSC2077-4K.jpg" target="_blank"
                                          alt="Diwali night"/></figure>
                             <div className="card-body">
                                 <h2 className="card-title text-white font-sans">Unsplash</h2>

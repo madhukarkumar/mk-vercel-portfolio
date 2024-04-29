@@ -12,7 +12,11 @@ const Podcast = ({ username }) => {
                 <h2 className="card-title">How we made that App</h2>
                 <p>Interviews of engineers building startups with their apps</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Watch Now</button>
+                    <button className="btn btn-primary">
+                        <Link href="https://www.youtube.com/playlist?list=PLB4l67JmPvKCnJOFkc5DaJ4i9Lo2OgUiJ" target="_blank">
+                            Watch Now
+                            </Link>
+                    </button>
                 </div>
             </div>
         </div>

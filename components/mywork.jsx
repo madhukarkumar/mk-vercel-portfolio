@@ -9,9 +9,18 @@ const Mywork = ({ username }) => {
             <div className="card-body">
                 <h2 className="card-title">Work Samples</h2>
                 <br/>
-                <p><span className="font-bold"> PLG </span> - Test Drive</p>
-                <p><span className="font-bold">Social </span> - Humans of DevRev</p>
-                <p><span className="font-bold">Brand </span>- Billboard on 101</p>
+                <p><span className="font-bold"> PLG </span>
+                    <Link
+                        href="https://www.nutanix.com/one-platform" target="_blank">- Test Drive</Link>
+                </p>
+                <p><span className="font-bold">Social </span>
+                    <Link
+                        href="https://devrev.ai/people" target="_blank"> - Humans of DevRev
+                    </Link></p>
+                <p><span className="font-bold">Brand </span>
+                    <Link
+                        href="https://www.singlestore.com/billboards/" target="_blank">- Billboard on 101
+                    </Link></p>
                 <p></p>
                 <p></p>
                 <p></p>

@@ -11,7 +11,12 @@ const Medium = ({ username }) => {
                 <Link
                     href="https://madhukarkumar.medium.com" target="_blank"> Medium </Link>
             </p>
-            <p className="card-body">Marketing, PLG and Tech </p>
+            <p className="card-body">
+                <Link
+                    href="https://madhukarkumar.medium.com" target="_blank">
+                    Marketing, PLG and Tech
+                </Link>
+                </p>
 
         </div>
     );
