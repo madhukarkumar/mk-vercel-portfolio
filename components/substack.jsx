@@ -1,15 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
 import '../app/globals.css';
+import Link from "next/link";
 
 const Substack = ({ username }) => {
     return (
-        <div className="max-w-full sm:w-96 h-52 bg-gray-50 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
-            <p className="text-gray-800 text-lg mb-4 font-sans">My Book on PLG</p>
-            <p className="text-gray-600 text-sm mb-2 font-sans">Substack</p>
+        <div className=" max-w-full h-52 bg-base-200 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
+
+            <Image src="/images/substack.png" alt="Substack logo" width={50} height={50} />
+            <p className="text-gray-800 font-bold mb-2 font-sans">Substack</p>
             <div className="flex items-center">
-                <Image src="/images/mastodon.svg" alt="Mastodon logo" width={20} height={20} />
-                <span className="text-gray-600 text-sm font-sans">{username}</span>
+
+                <p className="text-gray-600 text-lg font-medium mb-4 font-sans">
+                    <Link
+                        href="https://madhukarkumar.substack.com"> <a target="_blank"> My Book on PLG </a></Link>
+                </p>
             </div>
         </div>
     );

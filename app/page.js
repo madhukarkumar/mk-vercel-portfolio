@@ -2,6 +2,9 @@ import { Strong, Text, TextLink } from '@/components/text'
 import Medium  from "@/components/medium";
 import Link from "next/link";
 import Substack from "@/components/substack";
+import Podcast from "@/components/podcast";
+import Mywork from "@/components/mywork";
+
 import Fullengthcard from "@/components/fullengthcard";
 import './globals.css';
 import Image from "next/image";
@@ -21,52 +24,49 @@ export default function Home() {
                     <p className="text-xl font-sans">
                         Dev turned Marketer
                     </p>
-                    __
+                    _____
                     <br/>
                     <p className="text-xl font-sans">
                         Currently: CMO @SingleStore <br/>
-                        Previously: Redis, Nutanix, Oracle, Zuora
+                        Previously: Redis, Nutanix, Oracle
                     </p>
                 </Text>
                 <br/>
             </div>
             <div className="col-span-8 pr-5 pt-5">
                 <div className="grid grid-cols-12 gap-2 ">
-                    <div className="col-span-8">
+                    <div className="col-span-8 min-w-full min-h-full">
                         <div className="grid grid-rows-1">
                             <div >
                                 <div className="grid grid-cols-12">
                                     <div className="col-span-8 p-2">
                                         <div className="p-2">
-                                            <Medium username="madhukarkumar" />
-                                        </div>
-                                    </div>
-                                    <div className="col-span-4 pt-2">
-                                        <div className="p-2">
                                             <Substack username="madhukarkumar" />
                                         </div>
                                     </div>
+                                    <div className="col-span-4 pt-2 min-h-full min-w-full">
+                                        <div className="p-2">
+                                            <Medium username="madhukarkumar" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-12">
-                            <div className="col-span-4 ">
-                                <div className="p-2">
-                                    <Substack username="madhukarkumar"/>
+                        <div className="grid grid-cols-12 min-h-full ">
+                            <div className="col-span-4 min-h-full">
+                                <div className="p-2 min-h-full">
+                                    <Mywork username="madhukarkumar"/>
                                 </div>
                             </div>
-                            <div className="col-span-8">
-                                <div className="p-2">
-                                    <Medium username="madhukarkumar"/>
+                            <div className="col-span-8 min-h-full min-w-full">
+                                <div className="p-2 min-h-full">
+                                    <Podcast username="madhukarkumar"/>
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                     <div className="col-span-4 p-2 pt-4">
-                        <div className="card w-full bg-black min-h-full shadow-xl">
+                        <div className="card w-full bg-black h-full shadow-2xl">
                             <figure><img src="https://photos.smugmug.com/Portfolio/i-jZBn2Xw/0/8M7RqwJs67DhCBC4X6K2c7J3JBN8QGBSdfHWbZgP/4K/_DSC2077-4K.jpg"
                                          alt="Diwali night"/></figure>
                             <div className="card-body">
