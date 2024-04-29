@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="grid grid-cols-12 gap-2" style={{marginBottom: '0'}}>
+        <div className="grid grid-cols-12 gap-2 h-96" style={{marginBottom: '0'}}>
             <div className="col-span-4 pl-9 pt-10">
                 <Text>
                     <figure><img
@@ -33,9 +33,9 @@ export default function Home() {
                 </Text>
                 <br/>
             </div>
-            <div className="col-span-8 pr-5 pt-5">
+            <div className="col-span-8 pr-5 pt-5 h-96">
                 <div className="grid grid-cols-12 gap-2 ">
-                    <div className="col-span-8 min-w-full min-h-full">
+                    <div className="col-span-8 min-w-full">
                         <div className="grid grid-rows-1">
                             <div >
                                 <div className="grid grid-cols-12">
@@ -44,7 +44,7 @@ export default function Home() {
                                             <Substack username="madhukarkumar" />
                                         </div>
                                     </div>
-                                    <div className="col-span-4 pt-2 min-h-full min-w-full">
+                                    <div className="col-span-4 pt-2 min-w-full">
                                         <div className="p-2">
                                             <Medium username="madhukarkumar" />
                                         </div>
@@ -52,28 +52,31 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-12 min-h-full ">
-                            <div className="col-span-4 min-h-full">
-                                <div className="p-2 min-h-full">
+                        <div className="grid grid-cols-12 ">
+                            <div className="col-span-4">
+                                <div className="p-2">
                                     <Mywork username="madhukarkumar"/>
                                 </div>
                             </div>
-                            <div className="col-span-8 min-h-full min-w-full">
-                                <div className="p-2 min-h-full">
+                            <div className="col-span-8 min-w-full">
+                                <div className="p-2 ">
                                     <Podcast username="madhukarkumar"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-span-4 p-2 pt-4">
-                        <div className="card w-full bg-black h-full shadow-2xl">
+                        <div className="card w-full bg-black shadow-2xl h-full">
                             <figure><img src="https://photos.smugmug.com/Portfolio/i-jZBn2Xw/0/8M7RqwJs67DhCBC4X6K2c7J3JBN8QGBSdfHWbZgP/4K/_DSC2077-4K.jpg"
                                          alt="Diwali night"/></figure>
                             <div className="card-body">
                                 <h2 className="card-title text-white font-sans">Unsplash</h2>
                                 <p className="font-sans text-white">My pictures on Unsplash</p>
+                                <br/>
+                                <br/>
+                                <br/>
                                 <div className="card-actions justify-end">
-                                    <button className="btn btn-primary font-sans"><Link
+                                    <button className="btn btn-primary font-sans "><Link
                                         href="https://unsplash.com/@madhukarkumar" target="_blank">  Browse
                                     </Link></button>
                                 </div>
