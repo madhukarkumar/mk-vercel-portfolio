@@ -74,7 +74,7 @@ export default function Home() {
                                 <p className="font-sans text-white">My pictures on Unsplash</p>
                                 <div className="card-actions justify-end">
                                     <button className="btn btn-primary font-sans"><Link
-                                        href="https://unsplash.com/@madhukarkumar"> <a target="_blank"> Browse </a>
+                                        href="https://unsplash.com/@madhukarkumar" target="_blank">  Browse
                                     </Link></button>
                                 </div>
                             </div>

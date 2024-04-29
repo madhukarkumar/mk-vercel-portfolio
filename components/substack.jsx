@@ -13,7 +13,7 @@ const Substack = ({ username }) => {
 
                 <p className="text-gray-600 text-lg font-medium mb-4 font-sans">
                     <Link
-                        href="https://madhukarkumar.substack.com"> <a target="_blank"> My Book on PLG </a></Link>
+                        href="https://madhukarkumar.substack.com" target="_blank"> My Book on PLG </Link>
                 </p>
             </div>
         </div>

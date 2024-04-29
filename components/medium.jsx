@@ -9,7 +9,7 @@ const Medium = ({ username }) => {
             <Image src="/images/medium-icon.svg" alt="Medium logo" width={50} height={50} />
             <p className="card-title">
                 <Link
-                    href="https://madhukarkumar.medium.com"> <a target="_blank"> Medium </a></Link>
+                    href="https://madhukarkumar.medium.com" target="_blank"> Medium </Link>
             </p>
             <p className="card-body">Marketing, PLG and Tech </p>
 
