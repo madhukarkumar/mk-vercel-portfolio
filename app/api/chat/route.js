@@ -7,7 +7,7 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-export async function POST(req: Request) {
+export async function POST(req) {
     // Extract the `messages` from the body of the request
     const { messages } = await req.json();
 
