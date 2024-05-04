@@ -13,7 +13,7 @@ const Medium = ({ username }) => {
             </p>
             <p className="card-body">
                 <Link
-                    href="https://madhukarkumar.medium.com" target="_blank">
+                    href="https://madhukarkumar.medium.com" target="_blank" className="text-center">
                     Marketing, PLG and Tech
                 </Link>
                 </p>

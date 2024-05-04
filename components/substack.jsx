@@ -14,13 +14,13 @@ const Substack = ({ username }) => {
             </p>
             <div className="flex items-center">
 
-                <p className="text-gray-600 text-lg font-medium mb-4 font-sans">
+                <button className="btn btn-primary">
                     <Link
                         href="https://madhukarkumar.substack.com" target="_blank"> My Book on PLG </Link>
-                </p>
-            </div>
+                </button>
+                </div>
         </div>
-    );
+);
 };
 
 export default Substack;
