@@ -20,5 +20,5 @@ module.exports = {
       themes: ["light", "dark", "cupcake", "dim"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-animate")],
 };

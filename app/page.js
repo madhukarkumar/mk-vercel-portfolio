@@ -70,7 +70,7 @@ export default function Home() {
                             <figure><img src="https://photos.smugmug.com/Portfolio/i-jZBn2Xw/0/8M7RqwJs67DhCBC4X6K2c7J3JBN8QGBSdfHWbZgP/4K/_DSC2077-4K.jpg" target="_blank"
                                          alt="Diwali night"/></figure>
                             <div className="card-body">
-                                <h2 className="card-title text-white font-sans">Unsplash</h2>
+                                <h2 className="card-title text-white font-sans text-[28px] font-medium">Unsplash</h2>
                                 <p className="font-sans text-white">My pictures on Unsplash</p>
                                 <br/>
                                 <br/>

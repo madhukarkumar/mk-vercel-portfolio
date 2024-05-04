@@ -2,28 +2,36 @@ import React from 'react';
 import Image from 'next/image';
 import '../app/globals.css';
 import Link from "next/link";
-
+import { ChevronDoubleRightIcon } from '@heroicons/react/20/solid';
 const Mywork = ({ username }) => {
     return (
-        <div className="card h-96 card-bordered bg-base-100 rounded-lg max-w-full min-h-full shadow-xl">
+        <div className="card bg-black h-96 card-bordered bg-base-100 rounded-lg max-w-full min-h-full shadow-xl">
             <div className="card-body">
-                <h2 className="card-title">Work Samples</h2>
+                <h2 className="card-title text-white">Work Samples</h2>
                 <br/>
-                <p><span className="font-bold"> PLG </span>
+                    <div className="flex items-center space-x-2">
+                        <ChevronDoubleRightIcon className="h-5 w-5 text-white" aria-hidden="true"/>
+                        <Link
+                            href="https://www.nutanix.com/one-platform" target="_blank" className="text-white"> Test
+                            Drive</Link>
+                    </div>
+
+                <div className="flex items-center space-x-2">
+                    <ChevronDoubleRightIcon className="h-5 w-5 text-white" aria-hidden="true"/>
+                      <Link
+                    href="https://devrev.ai/people" target="_blank" className="font-light text-white"> Humans of
+                    DevRev
+                    </Link>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                    <ChevronDoubleRightIcon className="h-5 w-5 text-white" aria-hidden="true"/>
                     <Link
-                        href="https://www.nutanix.com/one-platform" target="_blank">- Test Drive</Link>
-                </p>
-                <p><span className="font-bold">Social </span>
-                    <Link
-                        href="https://devrev.ai/people" target="_blank"> - Humans of DevRev
-                    </Link></p>
-                <p><span className="font-bold">Brand </span>
-                    <Link
-                        href="https://www.singlestore.com/billboards/" target="_blank">- Billboard on 101
-                    </Link></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                        href="https://www.singlestore.com/billboards/" target="_blank"
+                        className="text-white font-light"> Billboard on 101
+                    </Link>
+                </div>
+
             </div>
         </div>
     );
