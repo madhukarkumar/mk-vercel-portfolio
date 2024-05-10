@@ -8,13 +8,13 @@ const Substack = ({ username }) => {
         <div className=" max-w-full h-52 bg-base-200 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
 
             <Image src="/images/substack.png" alt="Substack logo" width={50} height={50} />
-            <p className="text-gray-800 font-bold mb-2 font-sans">
+            <p className="font-sans text-[28px] font-medium mb-2 ">
                 <Link
                     href="https://madhukarkumar.substack.com" target="_blank"> Substack </Link>
             </p>
             <div className="flex items-center">
 
-                <button className="btn btn-primary">
+                <button className="btn btn-primary font-sans font-medium text-[16px]">
                     <Link
                         href="https://madhukarkumar.substack.com" target="_blank"> My Book on PLG </Link>
                 </button>

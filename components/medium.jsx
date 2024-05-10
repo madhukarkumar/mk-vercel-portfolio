@@ -5,18 +5,17 @@ import Link from "next/link";
 
 const Medium = ({ username }) => {
     return (
-        <div className="card card-bordered h-52 rounded-lg max-w-full bg-base-100 pt-5 items-center justify-center shadow-2xl ">
+        <div className="card card-bordered h-52 rounded-lg max-w-full bg-base-100 items-center pt-5 pb-8 shadow-2xl ">
             <Image src="/images/medium-icon.svg" alt="Medium logo" width={50} height={50} />
-            <p className="card-title">
+            <div className="font-sans text-[28px] font-medium">
+                <Link href="https://madhukarkumar.medium.com" target="_blank"> Medium </Link>
+            </div>
+            <div className="card-body">
                 <Link
-                    href="https://madhukarkumar.medium.com" target="_blank"> Medium </Link>
-            </p>
-            <p className="card-body">
-                <Link
-                    href="https://madhukarkumar.medium.com" target="_blank" className="text-center">
+                    href="https://madhukarkumar.medium.com" target="_blank" className="mb-16 text-left font-sans text-[18px]">
                     Marketing, PLG and Tech
                 </Link>
-                </p>
+            </div>
 
         </div>
     );

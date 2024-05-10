@@ -9,10 +9,12 @@ const Podcast = ({ username }) => {
             <figure><img src="/images/mk_podcast_profile.jpg" alt="Shoes"/>
             </figure>
             <div className="card-body">
-                <h2 className="card-title">How we made that App</h2>
-                <p>Interviews of engineers building startups with their apps</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">
+                <h2 className="font-sans font-medium text-[28px] pt-3 pb-2 mb-2">How we made that App</h2>
+                    <div className="text-left font-sans text-[18px] mb-2">
+                        <p>Interviews of engineers building startups with their apps</p>
+                    </div>
+                    <div className="card-actions justify-end">
+                    <button className="btn btn-primary font-sans font-medium text-[16px]">
                         <Link href="https://www.youtube.com/playlist?list=PLB4l67JmPvKCnJOFkc5DaJ4i9Lo2OgUiJ" target="_blank">
                             Watch Now
                             </Link>
