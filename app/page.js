@@ -33,7 +33,7 @@ export default function Home() {
                     </p>
                 </Text>
                 <br/>
-                    <div className="flex-row space-x-4 gap-2">
+                    <div className="hidden flex-row space-x-4 gap-2">
                         <Button color className="bg-black text-white w-36 h-14 text-xl shadow-2xl border-x-base-content">
                             <Link href="/sign-in">    Login </Link>
                         </Button>
