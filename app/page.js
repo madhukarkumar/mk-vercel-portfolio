@@ -34,8 +34,12 @@ export default function Home() {
                 </Text>
                 <br/>
                     <div className="flex-row space-x-4 gap-2">
-                        <Button color className="bg-black text-white w-36 h-14 text-xl shadow-2xl border-x-base-content">Login</Button>
-                        <Button color className="w-36 h-14 text-xl border-base-300 shadow-2xl">Sign Up</Button>
+                        <Button color className="bg-black text-white w-36 h-14 text-xl shadow-2xl border-x-base-content">
+                            <Link href="/sign-in">    Login </Link>
+                        </Button>
+                        <Button color className="w-36 h-14 text-xl border-base-300 shadow-2xl">
+                            <Link href="/sign-up">Sign Up </Link>
+                        </Button>
                     </div>
                 </div>
             <div className="col-span-8 pr-5 pt-5 h-96">
