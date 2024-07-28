@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import '../app/globals.css';
 import Link from "next/link";
+import { Button } from "@/components/ui/button"
+
 
 const Substack = ({ username }) => {
     return (
@@ -14,10 +16,10 @@ const Substack = ({ username }) => {
             </p>
             <div className="flex items-center">
 
-                <button className="btn btn-primary font-sans font-medium text-[16px]">
+                <Button className="btn btn-primary font-sans font-medium text-[16px]">
                     <Link
                         href="https://madhukarkumar.substack.com" target="_blank"> My Book on PLG </Link>
-                </button>
+                </Button>
                 </div>
         </div>
 );
