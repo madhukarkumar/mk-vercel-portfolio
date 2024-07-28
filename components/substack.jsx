@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 const Substack = ({ username }) => {
     return (
-        <div className=" max-w-full h-52 bg-base-200 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
+        <div className=" max-w-full h-full bg-base-200 rounded-lg flex flex-col items-center justify-center shadow-2xl p-2">
 
             <Image src="/images/substack.png" alt="Substack logo" width={50} height={50} />
             <p className="font-sans text-[28px] font-medium mb-2 ">
@@ -18,7 +18,7 @@ const Substack = ({ username }) => {
 
                 <Button className="btn btn-primary font-sans font-medium text-[16px]">
                     <Link
-                        href="https://madhukarkumar.substack.com" target="_blank"> My Book on PLG </Link>
+                        href="https://madhukarkumar.substack.com" target="_blank">PLG Handbook </Link>
                 </Button>
                 </div>
         </div>

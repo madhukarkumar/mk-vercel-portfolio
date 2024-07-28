@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ChevronDoubleRightIcon } from '@heroicons/react/20/solid';
 const Mywork = ({ username }) => {
     return (
-        <div className="card bg-black h-96 p-7 card-bordered rounded-lg max-w-full min-h-full shadow-xl">
+        <div className="card bg-black h-full p-7 card-bordered rounded-lg max-w-full min-h-full shadow-xl">
             <div className="card-body">
                 <h2 className="text-white font-sans text-[28px] font-medium">Work Samples</h2>
                 <br/>

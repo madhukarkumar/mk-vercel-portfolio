@@ -7,8 +7,8 @@ const FullLengthCard = ({ username }) => {
     return (
         <div className="card min-w-full h-52 bg-gradient-to-r from-purple-500 to-blue-400 rounded-lg flex flex-col shadow-2xl pl-10 pt-5">
             <p className="text-white text-left font-sans text-[28px] font-medium ">Current Obsession(s)</p>
-            <p className="text-white text-left font-sans text-[18px] mb-2 pb-4">Building an AI Agent based app for marketers.
-            <p> Chat with an my ever evolving AI twin and ask questions about marketing, PLG, tech stack (coming soon).</p>
+            <p className="text-white text-left font-sans text-[18px] mb-2 pb-4">Building an AI Agent for marketers.
+            <p> Chat with my self-learning AI twin and ask questions about marketing, PLG, tech stack (coming soon).</p>
             </p>
 
             <div className="flex items-center">

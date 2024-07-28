@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function UnsplashCard() {
     return (
-        <div className="bg-card h-[640px] text-card-foreground shadow-lg rounded-lg overflow-hidden">
+        <div className="bg-card h-full text-card-foreground shadow-lg rounded-lg overflow-hidden">
             <div className="relative w-full" style={{paddingTop: '75%'}}>
                 <Image 
                     src="https://photos.smugmug.com/Portfolio/i-jZBn2Xw/0/8M7RqwJs67DhCBC4X6K2c7J3JBN8QGBSdfHWbZgP/4K/_DSC2077-4K.jpg"
@@ -12,7 +12,7 @@ export default function UnsplashCard() {
                     style={{objectFit: 'cover'}}
                 />
             </div>
-            <div className="relative w-full top-2" style={{paddingTop: '75%'}}>
+            <div className="relative w-full top-2 mb-auto flex flex-col" style={{paddingTop: '75%'}}>
                 <Image 
                     src="https://photos.smugmug.com/Travel/i-GZktvhw/0/L7TXgtTHxSdV2DfqHqMQNztRsShb6Zn7KZm9k7Jks/4K/_ARV2233-4K.jpg"
                     alt="Turtle"
@@ -20,7 +20,7 @@ export default function UnsplashCard() {
                     style={{objectFit: 'cover'}}
                 />
             </div>
-            <div className="p-4">
+            <div className="p-4" justify-end>
                 <h2 className="text-primary h-3/4 font-sans text-2xl font-medium mb-2">My Pictures on Unsplash</h2>
                 
                     <Link 
