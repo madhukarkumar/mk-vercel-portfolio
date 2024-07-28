@@ -22,15 +22,7 @@ export default function UnsplashCard() {
             </div>
             <div className="p-4">
                 <h2 className="text-primary h-3/4 font-sans text-2xl font-medium mb-2">My Pictures on Unsplash</h2>
-                <div className="absolute bottom-4 left-4">
-                    <Link 
-                        href="https://unsplash.com/@madhukarkumar" 
-                        target="_blank" 
-                        className="inline-block bg-primary text-primary-foreground font-sans font-medium px-4 py-2 rounded hover:bg-primary/90 transition-colors"
-                    >
-                        Browse
-                    </Link>
-                </div>
+                
                     <Link 
                         href="https://unsplash.com/@madhukarkumar" 
                         target="_blank" 
