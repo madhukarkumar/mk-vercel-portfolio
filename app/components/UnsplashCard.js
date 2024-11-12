@@ -20,7 +20,7 @@ export default function UnsplashCard() {
                     style={{objectFit: 'cover'}}
                 />
             </div>
-            <div className="p-4" justify-end>
+            <div className="p-4 flex justify-end">
                 <h2 className="text-primary h-3/4 font-sans text-2xl font-medium mb-2">My Pictures on Unsplash</h2>
                 
                     <Link 

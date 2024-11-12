@@ -34,6 +34,20 @@ const Mywork = ({ username }) => {
                     </Link>
                 </div>
 
+                <div  className='flex items-center space-x-2'>
+                    <ChevronDoubleRightIcon className="h-5 w-5 text-white" aria-hidden="true"/>
+                    <Link
+                        href="https://ridethehype.co" target="_blank"
+                        className="text-[18px] text-white font-light font-sans"> Ride the Hype</Link>
+                </div>
+
+                <div  className='flex items-center space-x-2'>
+                    <ChevronDoubleRightIcon className="h-5 w-5 text-white" aria-hidden="true"/>
+                    <Link
+                        href="https://sinenext.org" target="_blank"
+                        className="text-[18px] text-white font-light font-sans"> NextJS Starter - SineNext Stack</Link>
+                </div>
+                    
                 <div className="flex items-center space-x-2">
                     <ChevronDoubleRightIcon className="h-5 w-5 text-white" aria-hidden="true"/>
                     <Link
