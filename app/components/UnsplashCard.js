@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from '../../components/button'
 
 export default function UnsplashCard() {
     return (
@@ -20,16 +21,15 @@ export default function UnsplashCard() {
                     style={{objectFit: 'cover'}}
                 />
             </div>
-            <div className="p-4 flex justify-end">
-                <h2 className="text-primary h-3/4 font-sans text-2xl font-medium mb-2">My Pictures on Unsplash</h2>
-                
-                    <Link 
-                        href="https://unsplash.com/@madhukarkumar" 
-                        target="_blank" 
-                        className="inline-block bg-primary text-primary-foreground font-sans font-medium px-4 py-2 rounded hover:bg-primary/90 transition-colors"
-                    >
-                        Browse
-                    </Link>
+            <div className="p-4 flex flex-col items-start">
+                <h2 className="text-primary h-3/4 font-sans text-2xl font-medium mb-24">My Pictures on Unsplash</h2>
+                <Button
+                    href="https://unsplash.com/@madhukarkumar"
+                    target="_blank"
+                    color="dark/zinc"
+                >
+                    Browse
+                </Button>
             </div>
         </div>
     )
