@@ -85,6 +85,7 @@ export const SkeletonTwo: React.FC = () => {
         animate="visible"
         variants={containerVariants}
       >
+        <p className="text-xs text-neutral-500"></p>
         <motion.li className="text-sm" variants={itemVariants}>Ridethehype - (Code) AI startups leaderboard</motion.li>
         <motion.li className="text-sm" variants={itemVariants}>Multi-Agent RAG Starter - Code</motion.li>
         <motion.li className="text-sm" variants={itemVariants}>Billboard on 101 - Creative</motion.li>
@@ -120,7 +121,7 @@ export const SkeletonThree: React.FC = () => {
       }}
     >
       <Image
-        src="/placeholder.svg?height=400&width=600"
+        src="/podcast.png?height=400&width=600"
         alt="Skeleton Three Placeholder"
         width={600}
         height={400}

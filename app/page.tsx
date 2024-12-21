@@ -47,7 +47,7 @@ export default function Page() {
                 <div className="mt-6 space-y-4 font-serif">
                   <p className="text-lg text-gray-800 dark:text-gray-200">Currently: CMO @SingleStore</p>
                   <p className="text-lg text-gray-800 dark:text-gray-200">Previously: Redis, Nutanix, Oracle</p>
-                  <div className="space-y-4 text-gray-700 dark:text-gray-300">
+                  <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
                     <p>
                       I began my career as a journalist before pursuing a Master’s in Software Engineering and Mass Communications, which set me on the path to becoming a software engineer. A few years later, I transitioned into product management and eventually found my passion as a marketer, working with both small startups and large tech companies in Silicon Valley.
                     </p>
@@ -124,7 +124,6 @@ export default function Page() {
     </ThemeProvider>
   )
 }
-
 const items = [
   {
     title: "I write in prose",
@@ -182,3 +181,4 @@ const items = [
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ]
+
