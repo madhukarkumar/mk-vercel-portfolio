@@ -34,17 +34,17 @@ export default function Page() {
               <div className="relative z-10">
                 <div className="text-center md:text-left">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mk-causal-o6cnOxw0N5K1zoRxwLoKFaJx0vLdGB.jpeg"
+                    src="/mk-casual.jpeg"
                     alt="Profile picture of Madhukar Kumar"
                     width={200}
                     height={200}
                     className="mx-auto md:mx-0 rounded-full aspect-square object-cover"
                   />
-                  <h1 className="mt-4 text-4xl font-bold font-sans text-gray-800 dark:text-gray-100">Madhukar Kumar</h1>
-                  <p className="text-xl text-gray-600 dark:text-gray-400 font-serif">Dev turned Marketer</p>
+                  <h1 className="mt-4 text-4xl font-bold text-gray-800 dark:text-gray-100">Madhukar Kumar</h1>
+                  <p className="text-xl text-gray-600 dark:text-gray-400">Dev turned Marketer</p>
                 </div>
                 {/* Current Role & Bio */}
-                <div className="mt-6 space-y-4 font-serif">
+                <div className="mt-6 space-y-4">
                   <p className="text-lg text-gray-800 dark:text-gray-200">Currently: CMO @SingleStore</p>
                   <p className="text-lg text-gray-800 dark:text-gray-200">Previously: Redis, Nutanix, Oracle</p>
                   <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
@@ -87,12 +87,12 @@ export default function Page() {
               <div className="mt-8">
                 <Card className="p-6 bg-gradient-to-r from-purple-600 to-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
                   <div className="text-white">
-                    <h2 className="text-3xl font-bold mb-4 font-sans">Current Obsessions</h2>
+                    <h2 className="text-3xl font-bold mb-4">Current Obsessions</h2>
                     <ul className="list-disc list-inside mb-2">
-                      <li className="text-lg font-serif">Building an AI Agent for marketers - 
+                      <li className="text-lg">Building an AI Agent for marketers - 
                         Chat with my self-learning AI twin and ask questions about marketing, PLG, tech stack. Cringe-worthy now. Guaranteed to improve in the neear future.
                       </li>
-                      <li className="text-lg font-serif">
+                      <li className="text-lg">
                         Working on an open source project to make databases more accessible to the army of agents built mindlessly by humans.
                       </li>
                     </ul>
@@ -133,7 +133,7 @@ const items = [
       </span>
     ),
     header: <SkeletonOne />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 border border-neutral-200 dark:border-neutral-700",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -144,7 +144,7 @@ const items = [
       </span>
     ),
     header: <SkeletonTwo />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 border border-neutral-200 dark:border-neutral-700",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -155,7 +155,7 @@ const items = [
       </span>
     ),
     header: <SkeletonThree />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 border border-neutral-200 dark:border-neutral-700",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -166,7 +166,7 @@ const items = [
       </span>
     ),
     header: <SkeletonFour />,
-    className: "md:col-span-3 lg:col-span-2",
+    className: "md:col-span-3 lg:col-span-2 border border-neutral-200 dark:border-neutral-700",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -177,7 +177,7 @@ const items = [
       </span>
     ),
     header: <SkeletonFive />,
-    className: "md:col-span-3 lg:col-span-1",
+    className: "md:col-span-3 lg:col-span-1 border border-neutral-200 dark:border-neutral-700",
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ]

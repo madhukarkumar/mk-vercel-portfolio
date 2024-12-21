@@ -36,27 +36,13 @@ export const SkeletonOne: React.FC = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
+        <Image
+        src="/substack-image.png?height=400&width=600"
+        alt="Skeleton Three Placeholder"
+        width={600}
+        height={400}
+        className="h-full w-full rounded-lg object-cover"
+      />
     </motion.div>
   )
 }
@@ -134,7 +120,7 @@ export const SkeletonThree: React.FC = () => {
 export const SkeletonFour: React.FC = () => {
   const first = {
     initial: {
-      x: 20,
+      x: 10,
       rotate: -5,
     },
     hover: {
@@ -144,7 +130,7 @@ export const SkeletonFour: React.FC = () => {
   }
   const second = {
     initial: {
-      x: -20,
+      x: -7,
       rotate: 5,
     },
     hover: {
@@ -164,8 +150,8 @@ export const SkeletonFour: React.FC = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://picsum.photos/200/300"
-          alt="Random Image"
+          src="/madhukar-kumar-14PONRlqe6E-unsplash.jpg"
+          alt="Unsplash Image by Madhukar Kumar"
           width={300}
           height={300}
           className="rounded-lg object-cover w-full h-full"
@@ -173,8 +159,8 @@ export const SkeletonFour: React.FC = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://picsum.photos/200/300"
-          alt="Random Image"
+          src="/madhukar-kumar-mX16vPPHzXI-unsplash.jpg"
+          alt="Unsplash Image by Madhukar Kumar"
           width={300}
           height={300}
           className="rounded-lg object-cover w-full h-full"
@@ -185,7 +171,7 @@ export const SkeletonFour: React.FC = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://picsum.photos/200/300"
+          src="/madhukar-kumar-rFIV8TohMyI-unsplash.jpg"
           alt="Random Image"
           width={300}
           height={300}
@@ -248,7 +234,7 @@ export const SkeletonFive: React.FC = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <p className="text-xs text-neutral-500">Specializations are for insects. I am multi-variate.</p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <div className="h-10 w-10 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
     </motion.div>
   )
