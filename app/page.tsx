@@ -129,7 +129,7 @@ const items = [
     title: "I write in prose",
     description: (
       <span className="text-sm">
-        About twice a month on Medium and Substack. And every other day on LinkedIn.
+        About twice a month on <Link href="https://madhukarkumar.medium.com" target="_blank" className="underline decoration-1 hover:decoration-2">Medium</Link> and <Link href="https://madhukarkumar.substack.com" target="_blank" className="underline decoration-1 hover:decoration-2">Substack</Link>. And every other day on <Link href="https://www.linkedin.com/in/madhukarkumar/" target="_blank" className="underline decoration-1 hover:decoration-2">LinkedIn</Link>.
       </span>
     ),
     header: <SkeletonOne />,
@@ -140,7 +140,7 @@ const items = [
     title: "I write in code",
     description: (
       <span className="text-sm">
-        I build apps for fun. Here, I do use AI. I am on github/madhukarkumar
+        I build apps for fun. Here, I do use AI. I am on <Link href="https://github.com/madhukarkumar" target="_blank" className="underline decoration-1 hover:decoration-2">github/madhukarkumar</Link>
       </span>
     ),
     header: <SkeletonTwo />,
@@ -151,7 +151,7 @@ const items = [
     title: "I have a podcast",
     description: (
       <span className="text-sm">
-        How we made that app - Interview of engineers on how they build apps. It is also on YouTube.
+        How we made that app - Interview of engineers on how they build apps. It is also on <Link href="https://www.youtube.com/playlist?list=PLB4l67JmPvKCnJOFkc5DaJ4i9Lo2OgUiJ" target="_blank" className="underline decoration-1 hover:decoration-2">YouTube</Link>.
       </span>
     ),
     header: <SkeletonThree />,
@@ -162,7 +162,7 @@ const items = [
     title: "I create pictures",
     description: (
       <span className="text-sm">
-        Sometimes I create pictures. With cameras. Not AI. They end up on Unsplash.
+        Sometimes I create pictures. With cameras. Not AI. They end up on <Link href="https://unsplash.com/@madhukarkumar" target="_blank" className="underline decoration-1 hover:decoration-2">Unsplash</Link>.
       </span>
     ),
     header: <SkeletonFour />,
@@ -181,4 +181,3 @@ const items = [
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ]
-
