@@ -6,6 +6,7 @@ import { Instagram, Twitter, Linkedin, FileText } from 'lucide-react'
 import { SiMedium } from 'react-icons/si'
 import { ThemeProvider } from '@/components/theme-provider'
 import { IconClipboardCopy, IconFileBroken, IconSignature, IconTableColumn, IconBoxAlignRightFilled } from '@tabler/icons-react'
+import { BlogsGrid } from '@/components/ui/blogs-grid'
 
 import { Card } from '@/components/ui/card'
 import { ThemeToggle } from '@/components/theme-toggle'
@@ -114,6 +115,11 @@ export default function Page() {
                 </Card>
               </div>
             </div>
+          </div>
+
+          {/* Blogs Section */}
+          <div className="mt-12">
+            <BlogsGrid />
           </div>
         </div>
         {/* ElevenLabs Convai Widget */}
