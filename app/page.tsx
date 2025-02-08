@@ -122,10 +122,6 @@ export default function Page() {
             <BlogsGrid />
           </div>
         </div>
-        {/* ElevenLabs Convai Widget */}
-        <div className="fixed bottom-4 right-4 z-50">
-          <elevenlabs-convai agent-id="PvkfXfm0WWGPRXdYCPuN"></elevenlabs-convai>
-        </div>
       </div>
     </ThemeProvider>
   )
