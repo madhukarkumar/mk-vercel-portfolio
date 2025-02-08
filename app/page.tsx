@@ -55,7 +55,17 @@ export default function Page() {
                     <p>
                       I thrive at the intersection of technology and creativity, building solutions and writing content that empower startup founders, growth marketers, and anyone eager to combine product management, product marketing, and engineering to create meaningful impact.
                     </p>
-                    <p>You can find me on Twitter and LinkedIn.</p>
+                    <p>
+                      You can find me on{' '}
+                      <Link href="https://x.com/madhukarkumar" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        Twitter
+                      </Link>
+                      {' '}and{' '}
+                      <Link href="http://linkedin.com/in/madhukarkumar" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        LinkedIn
+                      </Link>
+                      .
+                    </p>
                   </div>
                 </div>
               </div>
