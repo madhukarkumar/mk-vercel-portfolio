@@ -13,6 +13,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid'
 import { SkeletonOne, SkeletonTwo, SkeletonThree, SkeletonFour, SkeletonFive } from '@/components/bento-skeletons'
 import GridPattern from '@/components/magicui/grid-pattern'
+import { HeaderMenu } from '@/components/header-menu'
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
       disableTransitionOnChange
     >
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+        <HeaderMenu />
         <div className="container mx-auto p-4 md:p-8 max-w-7xl">
           {/* Theme Toggle */}
           <div className="fixed right-4 top-4 z-50">
