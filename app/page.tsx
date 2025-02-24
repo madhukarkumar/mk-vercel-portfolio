@@ -6,12 +6,14 @@ import { Instagram, Twitter, Linkedin, FileText } from 'lucide-react'
 import { SiMedium } from 'react-icons/si'
 import { ThemeProvider } from '@/components/theme-provider'
 import { IconClipboardCopy, IconFileBroken, IconSignature, IconTableColumn, IconBoxAlignRightFilled } from '@tabler/icons-react'
+import { BlogsGrid } from '@/components/ui/blogs-grid'
 
 import { Card } from '@/components/ui/card'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid'
 import { SkeletonOne, SkeletonTwo, SkeletonThree, SkeletonFour, SkeletonFive } from '@/components/bento-skeletons'
 import GridPattern from '@/components/magicui/grid-pattern'
+import { HeaderMenu } from '@/components/header-menu'
 
 export default function Page() {
   return (
@@ -22,6 +24,7 @@ export default function Page() {
       disableTransitionOnChange
     >
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+        <HeaderMenu />
         <div className="container mx-auto p-4 md:p-8 max-w-7xl">
           {/* Theme Toggle */}
           <div className="fixed right-4 top-4 z-50">
@@ -54,7 +57,17 @@ export default function Page() {
                     <p>
                       I thrive at the intersection of technology and creativity, building solutions and writing content that empower startup founders, growth marketers, and anyone eager to combine product management, product marketing, and engineering to create meaningful impact.
                     </p>
-                    <p>You can find me on Twitter and LinkedIn.</p>
+                    <p>
+                      You can find me on{' '}
+                      <Link href="https://x.com/madhukarkumar" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        Twitter
+                      </Link>
+                      {' '}and{' '}
+                      <Link href="http://linkedin.com/in/madhukarkumar" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                        LinkedIn
+                      </Link>
+                      .
+                    </p>
                   </div>
                 </div>
               </div>
@@ -115,10 +128,11 @@ export default function Page() {
               </div>
             </div>
           </div>
-        </div>
-        {/* ElevenLabs Convai Widget */}
-        <div className="fixed bottom-4 right-4 z-50">
-          <elevenlabs-convai agent-id="PvkfXfm0WWGPRXdYCPuN"></elevenlabs-convai>
+
+          {/* Blogs Section */}
+          <div className="mt-12">
+            <BlogsGrid />
+          </div>
         </div>
       </div>
     </ThemeProvider>
@@ -129,7 +143,7 @@ const items = [
     title: "I write in prose",
     description: (
       <span className="text-sm">
-        About twice a month on Medium and Substack. And every other day on LinkedIn.
+        About twice a month on <Link href="https://madhukarkumar.medium.com" target="_blank" className="underline decoration-1 hover:decoration-2">Medium</Link> and <Link href="https://madhukarkumar.substack.com" target="_blank" className="underline decoration-1 hover:decoration-2">Substack</Link>. And every other day on <Link href="https://www.linkedin.com/in/madhukarkumar/" target="_blank" className="underline decoration-1 hover:decoration-2">LinkedIn</Link>.
       </span>
     ),
     header: <SkeletonOne />,
@@ -140,7 +154,7 @@ const items = [
     title: "I write in code",
     description: (
       <span className="text-sm">
-        I build apps for fun. Here, I do use AI. I am on github/madhukarkumar
+        I build apps for fun. Here, I do use AI. I am on <Link href="https://github.com/madhukarkumar" target="_blank" className="underline decoration-1 hover:decoration-2">github/madhukarkumar</Link>
       </span>
     ),
     header: <SkeletonTwo />,
@@ -151,7 +165,7 @@ const items = [
     title: "I have a podcast",
     description: (
       <span className="text-sm">
-        How we made that app - Interview of engineers on how they build apps. It is also on YouTube.
+        How we made that app - Interview of engineers on how they build apps. It is also on <Link href="https://www.youtube.com/playlist?list=PLB4l67JmPvKCnJOFkc5DaJ4i9Lo2OgUiJ" target="_blank" className="underline decoration-1 hover:decoration-2">YouTube</Link>.
       </span>
     ),
     header: <SkeletonThree />,
@@ -162,7 +176,7 @@ const items = [
     title: "I create pictures",
     description: (
       <span className="text-sm">
-        Sometimes I create pictures. With cameras. Not AI. They end up on Unsplash.
+        Sometimes I create pictures. With cameras. Not AI. They end up on <Link href="https://unsplash.com/@madhukarkumar" target="_blank" className="underline decoration-1 hover:decoration-2">Unsplash</Link>.
       </span>
     ),
     header: <SkeletonFour />,
@@ -181,4 +195,3 @@ const items = [
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ]
-
