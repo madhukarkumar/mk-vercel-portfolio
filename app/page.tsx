@@ -52,7 +52,7 @@ export default function Page() {
                   <p className="text-lg text-gray-800 dark:text-gray-200">Previously: Redis, Nutanix, Oracle</p>
                   <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
                     <p>
-                      I began my career as a journalist before pursuing a Master’s in Software Engineering and Mass Communications, which set me on the path to becoming a software engineer. A few years later, I transitioned into product management and eventually found my passion as a marketer, working with both small startups and large tech companies in Silicon Valley.
+                      I began my career as a journalist before pursuing a Master's in Software Engineering and Mass Communications, which set me on the path to becoming a software engineer. A few years later, I transitioned into product management and eventually found my passion as a marketer, working with both small startups and large tech companies in Silicon Valley.
                     </p>
                     <p>
                       I thrive at the intersection of technology and creativity, building solutions and writing content that empower startup founders, growth marketers, and anyone eager to combine product management, product marketing, and engineering to create meaningful impact.
@@ -83,14 +83,14 @@ export default function Page() {
 
             {/* Bento Grid Layout */}
             <div className="md:w-2/3">
-              <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {items.map((item, i) => (
                   <BentoGridItem
                     key={i}
                     title={item.title}
                     description={item.description}
                     header={item.header}
-                    className={item.className}
+                    className={`${item.className} ${i === 3 ? 'md:col-span-2' : 'md:col-span-1'}`}
                     icon={item.icon}
                   />
                 ))}
@@ -103,7 +103,7 @@ export default function Page() {
                     <h2 className="text-3xl font-bold mb-4">Current Obsessions</h2>
                     <ul className="list-disc list-inside mb-2">
                       <li className="text-lg">Building an AI Agent for marketers - 
-                        Chat with my self-learning AI twin and ask questions about marketing, PLG, tech stack. Cringe-worthy now. Guaranteed to improve in the neear future.
+                        Chat with my self-learning AI twin and ask questions about marketing, PLG, tech stack. Cringe-worthy now. Guaranteed to improve in the near future.
                       </li>
                       <li className="text-lg">
                         Working on an open source project to make databases more accessible to the army of agents built mindlessly by humans.
@@ -143,11 +143,11 @@ const items = [
     title: "I write in prose",
     description: (
       <span className="text-sm">
-        About twice a month on <Link href="https://madhukarkumar.medium.com" target="_blank" className="underline decoration-1 hover:decoration-2">Medium</Link> and <Link href="https://madhukarkumar.substack.com" target="_blank" className="underline decoration-1 hover:decoration-2">Substack</Link>. And every other day on <Link href="https://www.linkedin.com/in/madhukarkumar/" target="_blank" className="underline decoration-1 hover:decoration-2">LinkedIn</Link>.
+        About once a week on <Link href="https://madhukarkumar.medium.com" target="_blank" className="underline decoration-1 hover:decoration-2">Medium</Link> and <Link href="https://madhukarkumar.substack.com" target="_blank" className="underline decoration-1 hover:decoration-2">Substack</Link>. And every other day on <Link href="https://www.linkedin.com/in/madhukarkumar/" target="_blank" className="underline decoration-1 hover:decoration-2">LinkedIn</Link>
       </span>
     ),
     header: <SkeletonOne />,
-    className: "md:col-span-1 border border-neutral-200 dark:border-neutral-700",
+    className: "border border-neutral-200 dark:border-neutral-700",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -158,29 +158,29 @@ const items = [
       </span>
     ),
     header: <SkeletonTwo />,
-    className: "md:col-span-1 border border-neutral-200 dark:border-neutral-700",
+    className: "border border-neutral-200 dark:border-neutral-700",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "I have a podcast",
     description: (
       <span className="text-sm">
-        How we made that app - Interview of engineers on how they build apps. It is also on <Link href="https://www.youtube.com/playlist?list=PLB4l67JmPvKCnJOFkc5DaJ4i9Lo2OgUiJ" target="_blank" className="underline decoration-1 hover:decoration-2">YouTube</Link>.
+        How we made that app - Interview of engineers on how they build apps. It is also on <Link href="https://www.youtube.com/playlist?list=PLB4l67JmPvKCnJOFkc5DaJ4i9Lo2OgUiJ" target="_blank" className="underline decoration-1 hover:decoration-2">YouTube</Link>
       </span>
     ),
     header: <SkeletonThree />,
-    className: "md:col-span-1 border border-neutral-200 dark:border-neutral-700",
+    className: "border border-neutral-200 dark:border-neutral-700",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "I create pictures",
     description: (
       <span className="text-sm">
-        Sometimes I create pictures. With cameras. Not AI. They end up on <Link href="https://unsplash.com/@madhukarkumar" target="_blank" className="underline decoration-1 hover:decoration-2">Unsplash</Link>.
+        Sometimes I create pictures. With cameras. They end up on <Link href="https://unsplash.com/@madhukarkumar" target="_blank" className="underline decoration-1 hover:decoration-2">Unsplash</Link>
       </span>
     ),
     header: <SkeletonFour />,
-    className: "md:col-span-3 lg:col-span-2 border border-neutral-200 dark:border-neutral-700",
+    className: "border border-neutral-200 dark:border-neutral-700",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -191,7 +191,7 @@ const items = [
       </span>
     ),
     header: <SkeletonFive />,
-    className: "md:col-span-3 lg:col-span-1 border border-neutral-200 dark:border-neutral-700",
+    className: "border border-neutral-200 dark:border-neutral-700",
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ]

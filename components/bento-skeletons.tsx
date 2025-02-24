@@ -66,15 +66,23 @@ export const SkeletonTwo: React.FC = () => {
   return (
     <div className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 p-4">
       <motion.ul
-        className="list-disc list-inside space-y-2"
+        className="list-disc list-inside space-y-5"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
         <p className="text-xs text-neutral-500"></p>
-        <motion.li className="text-sm" variants={itemVariants}>Ridethehype - (Code) AI startups leaderboard</motion.li>
-        <motion.li className="text-sm" variants={itemVariants}>Multi-Agent RAG Starter - Code</motion.li>
-        <motion.li className="text-sm" variants={itemVariants}>Billboard on 101 - Creative</motion.li>
+        <motion.li className="text-sm mb-5" variants={itemVariants}>
+          <a href="https://github.com/madhukarkumar/singlestore-mcp-server" className="hover:underline">
+            SingleStore MCP Server
+          </a>
+        </motion.li>
+        <motion.li className="text-sm mb-5" variants={itemVariants}>
+          <a href="https://kag-frontend.vercel.app" className="hover:underline">
+            Knowledge Augmented Retriaval (KAG) for Enterprise
+          </a>
+        </motion.li>
+
       </motion.ul>
     </div>
   )
