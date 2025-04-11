@@ -48,7 +48,7 @@ export default function Page() {
                 </div>
                 {/* Current Role & Bio */}
                 <div className="mt-6 space-y-4">
-                  <p className="text-lg text-gray-800 dark:text-gray-200">Currently: CMO @SingleStore</p>
+                  <p className="text-lg text-gray-800 dark:text-gray-200">Currently: CMO @Sourcegraph</p>
                   <p className="text-lg text-gray-800 dark:text-gray-200">Previously: Redis, Nutanix, Oracle</p>
                   <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
                     <p>
